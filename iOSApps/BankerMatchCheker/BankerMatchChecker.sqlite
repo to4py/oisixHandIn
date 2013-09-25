@@ -1,0 +1,20 @@
+CREATE TABLE Answer_Master (aID INTEGER PRIMARY KEY AUTOINCREMENT, qID INTEGER, answer TEXT, point INTEGER);
+
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (1,1,'はい、大好きです',3);
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (2,1,'まぁまぁ好きです',2);
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (3,1,'あまり得意ではないです',1);
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (4,2,'先輩は神様です',5);
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (5,2,'運動はよくやりました',2);
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (6,2,'ゲームもスポーツだよね？',1);
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (7,3,'FBフレンド300人超〜',3);
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (8,3,'週末はダチと飲み会だよ',2);
+INSERT INTO Answer_Master (aID,qID,answer,point) VALUES (9,3,'一匹狼さ',1);
+
+
+CREATE TABLE Question_Master (qID INTEGER PRIMARY KEY AUTOINCREMENT, question TEXT, answer1ID INTEGER, answer2ID INTEGER, answer3ID INTEGER);
+
+INSERT INTO Question_Master (qID,question,answer1ID,answer2ID,answer3ID) VALUES (1,'あなたは飲み会が好きですか？',1,2,3);
+INSERT INTO Question_Master (qID,question,answer1ID,answer2ID,answer3ID) VALUES (2,'体育会系の部活をしていましたか？',4,5,6);
+INSERT INTO Question_Master (qID,question,answer1ID,answer2ID,answer3ID) VALUES (3,'社交的な方ですか？',7,8,9);
+
+
